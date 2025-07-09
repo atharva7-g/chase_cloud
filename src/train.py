@@ -103,7 +103,6 @@ if __name__ == "__main__":
         accelerator="gpu" if torch.cuda.is_available() else "cpu",
         devices=1,
         callbacks=[checkpoint_callback],
-        resume_from_checkpoint=resume_checkpoint_path
     )
 
-    trainer.fit(model)
+    trainer.fit(model, ckpt_path=resume_checkpoint_path)

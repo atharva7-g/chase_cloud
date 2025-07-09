@@ -1,8 +1,8 @@
 # src/config.py
 
 # --- Data and Paths ---
-DATA_PATH = "data/raw_insat"  # Relative path to your raw TIFF files
-CHECKPOINT_PATH = "checkpoints/"  # Directory to save model weights
+DATA_PATH = "/kaggle/working/images"  # Relative path to your raw TIFF files
+CHECKPOINT_PATH = "/kaggle/working/checkpoints"  # Directory to save model weights
 
 # --- Model & Data Parameters ---
 # Match these with the channels in your filenames (e.g., MIR, WV, VIS)
